@@ -7550,7 +7550,7 @@ end
 
 function useCommand.reload()
 	opx("-","Reloading rAKIA...")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BlipCoGames/rAKIA/main/rAKIA.txt", true))()
 end
 
 function useCommand.partesp()
@@ -8427,7 +8427,7 @@ function useCommand.runafter()
 		opx("-","rAKIA will now run after rejoin")
 		KeepCMDXOn = true
 		if KeepCMDXOn and syn.queue_on_teleport then
-			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()')
+			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/BlipCoGames/rAKIA/main/rAKIA.txt"))()')
 		end
 		updatesaves()
 	elseif arguments[2] == "off" then
@@ -14470,7 +14470,7 @@ function useCommand.rejoinexecute()
 	syn.queue_on_teleport([[
 		game:GetService('ReplicatedFirst'):RemoveDefaultLoadingScreen()
 		repeat wait(.1) until game:GetService('Players').LocalPlayer
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlipCoGames/rAKIA/main/rAKIA.txt", true))()
 	]])
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -14986,7 +14986,7 @@ function useCommand.rejoinrefreshexecute()
 			end)
 			playeradded:Disconnect()
 		end)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlipCoGames/rAKIA/main/rAKIA.txt", true))()
 	]], c.X, c.Y, c.Z))
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
